@@ -8,4 +8,8 @@ class WeatherInfo {
         public int $temperature,
         public string $weatherType
     ) {}
+
+    public function getCelsius() {
+        return round($this->temperature - 273.15);
+    }
 }
