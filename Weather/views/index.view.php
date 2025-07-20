@@ -14,7 +14,7 @@
                 <svg class="icon" viewBox="0 0 52.7624 72.774">
                     <path d="m45.0353,7.7268h0c-10.3024-10.3024-27.0058-10.3024-37.3081,0h0C-1.2832,16.7371-2.5652,30.9001,4.6807,41.3819l21.7006,31.392,21.7006-31.392c7.2459-10.4818,5.9638-24.6448-3.0465-33.6551Zm-18.6541,32.3037c-7.5383,0-13.6492-6.111-13.6492-13.6492s6.111-13.6493,13.6492-13.6493,13.6492,6.111,13.6492,13.6493-6.111,13.6492-13.6492,13.6492Z" style="fill: currentColor;"/>
                 </svg>
-                Los Angeles
+                <?= $cityInfo->city ?>
             </div>
             <div class="top-bar__date">
                 Monday, 25<sup>th</sup>
@@ -22,7 +22,7 @@
         </div>
         <div class="weather-info">
             <img class="weather-info__image" src="images/stormy/large.svg" alt="Stormy" />
-            <h1 class="weather-info__temperature">40°</h1>
+            <h1 class="weather-info__temperature"><?= $cityInfo->temperature ?>°</h1>
             <p class="weather-info__desc">
                 <svg class="icon" viewBox="0 0 64.835 62.9863">
                     <g>
@@ -30,7 +30,7 @@
                         <polygon points="31.496 32.023 37.4737 15.8957 27.2263 15.8957 19.1137 39.7765 30.0016 39.7765 24.5577 61.4863 43.8782 32.023 31.496 32.023" style="fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3px;"/>
                     </g>
                 </svg>
-                Stormy
+                <?= $cityInfo->type ?>
             </p>
         </div>
     </div>
