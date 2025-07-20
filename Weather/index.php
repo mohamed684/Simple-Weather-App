@@ -6,7 +6,7 @@ require __DIR__ . '/inc/all.inc.php';
 
 $fetcher = new FakeWeatherFetcher();
 
-$cityInfo = $fetcher->fetch('Cairo');
+$info = $fetcher->fetch('Cairo');
 
 
 require __DIR__ . '/views/index.view.php';

@@ -6,6 +6,6 @@ class WeatherInfo {
     public function __construct(
         public string $city,
         public int $temperature,
-        public string $type
+        public string $weatherType
     ) {}
 }
